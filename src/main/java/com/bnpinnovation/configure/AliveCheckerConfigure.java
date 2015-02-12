@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.bnpinnovation.configure.OperatingSystemCheck.OSType;
 import com.bnpinnovation.service.alive.PingService;
 import com.bnpinnovation.service.alive.PingServiceForLinux;
 import com.bnpinnovation.service.alive.PingServiceForWindows;
@@ -37,7 +36,7 @@ public class AliveCheckerConfigure {
 	@Bean
 	public PingService pingOperator() {
 		PingService pingService = null;
-		OSType osType = OperatingSystemCheck.getOperatingSystemType();
+		OSType osType = OSType.getOS_Type();
 		if( OSType.Linux.equals(osType) || OSType.MacOS.equals(osType) ){
 			pingService = new PingServiceForLinux();
 		} else if( OSType.Windows.equals(osType) ) {
