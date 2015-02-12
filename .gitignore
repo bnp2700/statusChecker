@@ -6,3 +6,4 @@ bin/
 
 # Build targets
 /target
+/src/main/resources/conf/
