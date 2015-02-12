@@ -3,7 +3,7 @@
 .classpath
 .settings
 bin/
+/src/main/resources/conf/database.properties
 
 # Build targets
 /target
-/src/main/resources/conf/
