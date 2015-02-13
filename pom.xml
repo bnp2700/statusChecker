@@ -3,19 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bnpinnovation.dms</groupId>
 	<artifactId>hyunjin</artifactId>
-	<version>1.0.4.RELEASE</version>
+	<version>1.0.5.RELEASE</version>
 
 	<properties>
 		<java-version>1.7</java-version>
 		<springframework-version>4.0.9.RELEASE</springframework-version>
 		<aspectj-version>1.8.4</aspectj-version>
 		<slf4j-version>1.7.9</slf4j-version>
-		<json-jackson>2.4.4</json-jackson>
-		<org.igniterealtime.smack-version>4.0.6</org.igniterealtime.smack-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputencoding>UTF-8</project.reporting.outputencoding>
-		<test-server-port>50061</test-server-port>
-		<test-server-ip>61.98.77.180</test-server-ip>
 	</properties>
 
 	<repositories>
