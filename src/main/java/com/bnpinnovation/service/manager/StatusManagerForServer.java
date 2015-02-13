@@ -38,12 +38,12 @@ public class StatusManagerForServer implements StatusManager {
 			if(status.getServerStatus() != newStatus.getServerStatus()) {
 				statusRepository.put(newStatus.getName(), newStatus);
 				isPersist = true;
-				logger.info("manager-change server status : " + newStatus.getServerStatus());
+				logger.info("manager) server status change : [ " + newStatus.getName() + " ], status : [ " + newStatus.getServerStatus()+" ]");
 			}
 		} else {
 			statusRepository.put(newStatus.getName(), newStatus);
 			isPersist = true;
-			logger.info("manager-new server status : " + newStatus.getServerStatus());
+			logger.info("manager) server status regist : [ " + newStatus.getName() + " ], status : [ " + newStatus.getServerStatus()+" ]");
 		}
 		
 		return isPersist;

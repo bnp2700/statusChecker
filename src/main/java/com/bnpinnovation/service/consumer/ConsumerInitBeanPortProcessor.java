@@ -15,15 +15,14 @@ public class ConsumerInitBeanPortProcessor implements BeanPostProcessor {
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName)
 			throws BeansException {
-		logger.info("postprocessBeforeInitialization.");
 		return bean;
 	}
 
 	@Override
 	public Object postProcessAfterInitialization(Object bean, String beanName)
 			throws BeansException {
-		logger.info("postprocessAfterInitialization.");
 		if( bean instanceof Consumer) {
+			logger.info("consumer started : " + bean.getClass().getName());
 			((Consumer) bean).initConsumer();
 		}
 		return bean;

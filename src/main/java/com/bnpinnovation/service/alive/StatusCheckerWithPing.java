@@ -22,7 +22,7 @@ public class StatusCheckerWithPing implements StatusCheckerForServer {
 		try {
 			pingService.isAlive(host);
 		}catch(PingServiceException pingServiceException) {
-			logger.info("ping failed, caused : " + pingServiceException.getErrorCode());
+			logger.info("ping failed : [ " + host + " ], caused code : " + pingServiceException.getErrorCode());
 			return false;
 		}
 		
