@@ -29,7 +29,7 @@ public class ServerStatusDaoImpl implements ServerStatusDao {
 	@Resource
 	private JdbcTemplate jdbcTemplate;
 
-	private String serverQuery = "select name, ip from management_server";
+	private String serverQuery = "select name, ip from management_server where del=1";
 	private String insertServerStatus = "insert into disorder (name, d_date,icmp_result) values(?,?,?)";
 
 	@Override
