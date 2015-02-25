@@ -11,8 +11,6 @@ public class PingServiceForLinux extends PingServiceTemplate {
 	protected Process pingCheck(String host, long pingTimeout)  {
 		String pingCommand = "ping -W " + pingTimeout + " -c 1 " + host;
 		
-		System.out.println(pingCommand);
-		
 		Process process;
 		try {
 			process = Runtime.getRuntime().exec(pingCommand);
