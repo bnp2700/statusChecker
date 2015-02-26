@@ -4,14 +4,11 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:task="http://www.springframework.org/schema/task"
 	xmlns:util="http://www.springframework.org/schema/util"
-	xsi:schemaLocation="http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
-		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
-		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
-
-	<!-- <bean class="com.bnpinnovation.service.alive.StatusCheckerWithInetAddress"
-		id="checkerService"/> -->
-	
+	xsi:schemaLocation="http://www.springframework.org/schema/task classpath:org/springframework/scheduling/config/spring-task-4.0.xsd
+		http://www.springframework.org/schema/beans classpath:org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/tool classpath:org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+		http://www.springframework.org/schema/context classpath:org/springframework/context/config/spring-context-4.0.xsd
+		http://www.springframework.org/schema/util classpath:org/springframework/beans/factory/xml/spring-util-4.0.xsd">	
 
 	<bean
 		class="com.bnpinnovation.service.consumer.ConsumerInitBeanPortProcessor" />
